@@ -1,0 +1,440 @@
+/*
+ * CSS file for TEX specific things.
+ */
+
+/*
+ * Classification banners.
+ */
+.unclassBanner {
+	background-color: #009900;
+	text-align: center;
+}
+
+.unclassBanner span {
+	font-weight: bolder;
+	font-size: 12px;
+	color: #ffffff;
+}
+
+.unclassBanner span:before {
+	content: "Unclassified";
+}
+
+.secretBanner {
+	background-color: #cc0000;
+	text-align: center;
+}
+
+.secretBanner span {
+	font-weight: bolder;
+	font-size: 12px;
+	color: #ffffff;
+}
+
+.secretBanner span:before {
+	content: "Secret";
+}
+
+.tsBanner {
+	background-color: #ffff00;
+	text-align: center;
+}
+
+.tsBanner span {
+	font-weight: bolder;
+	font-size: 12px;
+	color: #000000;
+}
+
+.tsBanner span:before {
+	content: "Top Secret";
+}
+
+/*
+ * Pads the "Logo" so that it's not at the edge of the screen.
+ */
+.paddedBrand {
+	padding-right: 10px;
+	padding-left: 20px;
+}
+
+/*
+ * Pads the content region so that it's not covered by the fixed header
+ * and footer.
+ */
+.paddedContent {
+	padding-top: 90px;
+	padding-bottom: 40px;
+}
+
+/*
+ * Spacer divs.
+ */
+.spacer-small {
+	width: 50px;
+}
+
+.center-horizontal {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*
+ * Text Area
+ */
+.textarea-full {
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 300px;
+	max-height: 50%;
+}
+
+/*
+ * Content
+ */
+.texContent {
+	border-radius: 6px;
+	padding: 30px;
+	background-color: #eeeeee;
+}
+
+/*
+ * Round Borders
+ */
+.round-top-left, .rounded, .round-med-padding {
+	border-top-left-radius: 6px;
+}
+
+.round-top-right, .rounded, .round-med-padding {
+	border-top-right-radius: 6px;
+}
+
+.round-bottom-left, .rounded, .round-med-padding {
+	border-bottom-left-radius: 6px;
+}
+
+.round-bottom-right, .rounded, .round-med-padding {
+	border-bottom-right-radius: 6px;
+}
+
+.round-med-padding {
+	padding: 15px;
+}
+
+/*
+ * Form Groups
+ */
+.form-reduced-space-top {
+	margin-top: -15px;
+}
+
+.form-reduced-space-left {
+	margin-left: -40px !important;
+}
+
+.form-reduced-space-right {
+	margin-right: -40px !important;
+}
+
+/*
+ * Borders
+ */
+.border-thin {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px solid;
+}
+
+.med-border {
+	border: 5px solid;
+	border-color: #eeeeee;
+}
+
+.border-dark {
+	border-color: #333333;
+}
+
+.border-light {
+	border-color: #e5e5e5;
+}
+
+/*
+ * Panels
+ */
+.panel-blue {
+	background-image: linear-gradient(to bottom, #66AFE9 0%, #2d6ca2 100%) !important;
+}
+
+/*
+ * fonts
+ */
+.font-bold {
+	font-weight: bold;
+}
+
+.font-white {
+	color: #ffffff;
+}
+
+/*
+ * glyphicon
+ */
+.glyphicon:hover {
+	color: #0000ff;
+}
+
+.glyphicon-remove:hover {
+	color: #ff0000;
+}
+
+.glyphicon-plus:hover {
+	color: #00cc00;
+}
+
+/*
+ * Colored background
+ */
+.bg-light {
+	background-color: #ffffff;
+}
+
+.bg-dark {
+	background-color: #333333;
+}
+
+/**
+ * Glyphicon
+ */
+.chevron-white-yellow {
+	color: #ffffff;
+}
+
+.chevron-white-yellow:hover {
+	color: #ffff00;
+}
+
+/*
+ * div specific
+ */
+div.inline-block {
+	display: inline-block;
+}
+
+/*
+ * Table
+ */
+div.table, div.table-padded-rows {
+	display: table;
+}
+
+div.table div.table-row, div.table-padded-rows div.table-row {
+	display: table-row;
+}
+
+div.table div.table-row div.table-cell, div.table-padded-rows div.table-cell {
+	display: table-cell;
+}
+
+div.table-padded-rows {
+	border-collapse: separate;
+	border-spacing: 0 5px;
+	min-width: 100%;
+	max-width: 100%;
+}
+
+/*
+ * Message Pane Header
+ */
+.padded-tiny {
+	padding: 5px;
+}
+
+/*
+ * Message Page
+ */
+div.padded-table {
+	display: table;
+	max-width: 60%;
+}
+
+div.padded-table > div {
+	display: table-row;
+}
+
+.msg-list, .msg-full, .ds-list, .ds-full {
+	display: table-cell;
+}
+
+.msg-list, .ds-list {
+	min-width: 200px;
+	max-width: 300px;
+}
+
+.msg-full, .ds-full {
+	min-width: 60%;
+	max-width: 100%;
+}
+
+.msgView, .dsView {
+	border-radius: 6px;
+	padding: 30px;
+	border: 5px solid;
+	border-color: #eeeeee;
+}
+
+.msgPreviewList, .dsPreviewList {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.msgPreviewHeader, .dsPreviewHeader {
+	background-color: #cccccc;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.msgPreview, .dsPreview {
+	padding: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: #cccccc;
+	border: 1px solid;
+	border-color: #cccccc;
+}
+
+.msgPreview:hover, .dsPreview:hover {
+	border-color: #ff9900;
+}
+
+.msgListPane, .dsListPane {
+	min-width: 200px;
+	max-width: 200px;
+	max-height: 100%;
+	min-height: 100%;
+}
+
+/*
+ * Msg List View Header
+ */
+.displayPageNum {
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	min-width: 80%;
+	max-width: 100%;
+	color: #ffffff;
+	font-weight: bolder;
+}
+
+.msgListHeader, .dsListHeader {
+	margin: 0 auto;
+}
+
+.msgFullPane, .dsFullPane {
+	min-width: 50%;
+	max-width: 1000px;
+}
+
+.msgForm, .dsForm {
+	width: 90%;
+}
+
+.max-width, .max-size {
+	width: inherit;
+	max-width: inherit;
+	min-width: inherit;
+}
+
+.max-height, .max-size {
+	height: inherit;
+	max-height: inherit;
+	min-height: inherit;
+}
+
+/*
+ * Accordian
+ */
+.panel-heading .accordion-toggle:after {
+	font-family: 'Glyphicons Halflings';
+	content: "\e114";
+	float: right;
+	color: #66AFE9;
+}
+
+.panel-heading .accordion-toggle.collapsed:after {
+	content: "\e080";
+	color: gray;
+}
+
+.hand-cursor {
+	cursor: pointer;
+}
+
+.select-notice {
+	min-width: 10px;
+	max-width: 10px;
+	background-image: linear-gradient(to bottom, #dfdfdf 0%, #303030 100%);
+	border: 1px solid;
+	border-color: #606060;
+}
+
+.select-notice:hover {
+	border-color: #66AFE9;
+}
+
+.selected-notice {
+	background-image: linear-gradient(to bottom, #d9534f 0%, #c12e2a 100%) !important;
+}
+
+.shown-message {
+	background-image: linear-gradient(to bottom, #33fd00 0%, #0b5f00 100%) !important;
+}
+
+.msg-preview-container, .ds-preview-container {
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-right: 5px;
+	background-image: linear-gradient(to bottom, #dfdfdf 0%, #303030 100%);
+}
+
+.msg-preview-container:hover, .ds-preview-container:hover {
+	background-image: linear-gradient(to bottom, #66AFE9 0%, #2d6ca2 100%) !important;
+}
+
+.msg-preview, .ds-preview {
+	background-color: #ffffff;
+}
+
+body {
+	background-color: #333333;
+	height: 100%;
+	min-height: 100%;
+	width: 100%;
+	max-width: 1600px;
+}
+
+textarea {
+	padding: 5px;
+	border-color: #cccccc;
+	border-radius: 6px;
+	outline: 0;
+	resize: none;
+	overflow: auto;
+}
+
+textarea:focus {
+	border-color: #66AFE9;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+input[type="text"], input[type="date"], textarea {
+	background-color: #eeeeee;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, textarea:focus {
+	background-color: #ffffff;
+}

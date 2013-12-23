@@ -1,0 +1,14 @@
+{
+	"name": "Tex Web UI",
+	"version": "0.0.1",
+	"dependencies": {
+		"jquery": null,
+		"lodash": null,
+		"backbone.marionette": null,
+		"bootstrap": null,
+		"requirejs": null,
+		"handlebars": null,
+		"text": null,
+		"bootstrap-modal": null
+	}
+} 

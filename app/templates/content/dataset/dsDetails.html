@@ -1,0 +1,55 @@
+<div class="panel panel-blue panel-default">
+	<div class="panel-heading panel-blue">
+		<h4 class="panel-title font-bold font-white">Project: {{projectName}}</h4>
+	</div>
+</div>
+<form class="form-horizontal center-horizontal msgForm" role="form">
+	<div class="form-group">
+		<label for="inpTitle" class="col-sm-1 control-label">Name</label>
+		<div class="col-sm-11">
+			<input type="text" name="inpTitle" class="form-control" value="{{name}}"></input>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="inpDate" class="col-sm-1 control-label">Date</label>
+		<div class="col-sm-4">
+			<input type="date" name="inpDate" class="form-control" value="{{date}}"></input>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="panel-group" id="accordianMisc">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordionMisc" href="#collapseMisc">Miscellaneous Information</a>
+					</h4>
+				</div>
+				<div id="collapseMisc" class="panel-collapse collapse">
+					<div class="panel-body">
+						<div class="form-group">
+							<label for="inpId" class="col-sm-2 control-label">Project ID</label>
+							<div class="col-sm-4">
+								<input type="text" name="inpId" class="form-control" value="{{projectId}}" readOnly></input>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inpDSId" class="col-sm-2 control-label">Project Name</label>
+							<div class="col-sm-4">
+								<input type="text" name="inpDSId" class="form-control" value="{{projectName}}" readOnly></input>
+							</div>
+							<label for="inpId" class="col-sm-2 control-label">Data Set ID</label>
+							<div class="col-sm-4">
+								<input type="text" name="inpId" class="form-control" value="{{id}}" readOnly></input>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer form-reduced-space-left form-reduced-space-right">
+		<button type="button" class="btn btn-danger pull-left">Delete</button>
+		<button type="button" class="btn btn-info" id="importButton">Import</button>
+		<button type="button" class="btn btn-primary">Save</button>
+	</div>
+</form>

@@ -1,0 +1,12 @@
+{{#if isFirstPage}}
+	<div id="prevPage" class="glyphicon glyphicon-chevron-left disabled-chevron pull-left"></div>
+{{else}}
+	<div id="prevPage" class="glyphicon glyphicon-chevron-left chevron-white-yellow pull-left"></div>
+{{/if}}
+<div class="inline-block displayPageNum">{{currentPage}} of {{totalPage}}</div>
+
+{{#if isLastPage}}
+	<div id="nextPage" class="glyphicon glyphicon-chevron-right disabled-chevron pull-right"></div>
+{{else}}
+	<div id="nextPage" class="glyphicon glyphicon-chevron-right chevron-white-yellow pull-right"></div>
+{{/if}}
