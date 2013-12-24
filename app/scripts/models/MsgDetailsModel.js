@@ -32,15 +32,16 @@ define([
 				
 				$.when(message.fetch()).done(function() {
 					console.log('fetching 2');
-					dataset.set({'id': message.parent});
-//					$.when(dataset.fetch()).done(function() {
-//						console.log('fetching 3');
-//						_this.set({'message': message});
-//						_this.set({'dataset': dataset});
-//						deferred.resolve();
-//					});
-//					console.log(JSON.stringify(_this));
-//					return _this;
+					dataset.set({'id': message.get("parent")});
+					$.when(dataset.fetch()).done(function() {
+						console.log('fetching 3');
+						_this.set({'message': message});     //This will not trigger "change" event because it is the same message object
+						_this.set({ 'dataset': dataset });   //This will not trigger "change" event because it is the same dataset object
+						_this.trigger("change");
+						deferred.resolve();
+					});
+					console.log(JSON.stringify(_this));
+					return _this;
 				});
 				
 				return deferred.promise();

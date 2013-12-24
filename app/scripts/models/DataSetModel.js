@@ -4,7 +4,7 @@ define([
 
 	function($, Backbone) {
 		return Backbone.Model.extend({
-			urlRoot: 'http://localhost:8080/web/dataset',
+			urlRoot: 'web/dataset',
 			defaults: {
 				id: '',
 				parent: '',
