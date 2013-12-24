@@ -13,7 +13,7 @@ server.configure(function () {
 		dumpExceptions:true,
 		showStack:true
 	}));
-    server.use(server.router);
+   // server.use(server.router);
 });
 
 // SERVER
@@ -21,5 +21,24 @@ server.configure(function () {
 
 // Start Node.js Server
 http.createServer(server).listen(port);
+
+server.get("/web/message/:id", function (req, res) {
+  res.json({
+      id: req.params.id,
+      parent: 1,
+      title: "Message Title",
+      creationDate: '1/1/1',
+      text: 'Message Text'
+  });
+});
+
+server.get("/web/dataset/:id", function (req, res) {
+  res.json({
+    id: req.params.id,
+    parent: 123,
+    name:"My DataSet"
+  });
+});
+
 
 console.log('Welcome to Marionette-Require-Boilerplate!\n\nPlease go to http://localhost:' + port + ' to start using Require.js and Marionette');
